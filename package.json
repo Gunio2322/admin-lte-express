@@ -2,44 +2,44 @@
   "name": "admin-lte-express",
   "version": "1.4.2",
   "scripts": {
-    "start": "./node_modules/.bin/webpack && node ./bin/server",
-    "dev": "./node_modules/.bin/webpack-dev-server",
+    "start": "webpack && node ./bin/server",
+    "dev": "webpack-dev-server",
     "server": "node ./bin/server"
   },
   "bin": {
-    "generate": "./bin/generate"
+    "generate": "bin/generate"
   },
   "dependencies": {
-    "body-parser": "~1.13.2",
+    "body-parser": "^1.20.2",
     "connect-ensure-login": "^0.1.1",
     "cookie-parser": "~1.3.5",
     "crypto": "0.0.3",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "express-handlebars": "^3.0.0",
+    "debug": "^2.6.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.1",
     "express-session": "^1.13.0",
     "flux": "^2.1.1",
     "method-override": "^2.3.5",
-    "mongoose": "^4.4.6",
-    "morgan": "~1.6.1",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
     "mysql": "^2.10.2",
     "named-routes": "^2.0.3",
-    "passport": "^0.3.2",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router": "^2.4.1",
-    "sequelize": "^3.23.2",
-    "serve-favicon": "~2.3.0"
+    "sequelize": "^6.29.1",
+    "serve-favicon": "^2.5.0"
   },
   "description": "AdminLTE 2.3.2 with express and express-handlebars.",
   "devDependencies": {
-    "babel-core": "^6.9.0",
-    "babel-loader": "^6.2.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^5.75.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "repository": {
     "type": "git",
@@ -55,5 +55,6 @@
   "bugs": {
     "url": "https://github.com/RamEduard/admin-lte-express/issues"
   },
-  "homepage": "https://github.com/RamEduard/admin-lte-express#readme"
+  "homepage": "https://github.com/RamEduard/admin-lte-express#readme",
+  "main": "index.js"
 }

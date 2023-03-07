@@ -4,7 +4,7 @@ var mongoose  = require('mongoose'),
 
 // Uncomment for use mongo database
 mongoose.connect(urlMLocal, function(err) {
-  if (err) console.log(err);
+  if (err) console.log(err, ('zjebane'));
 });
 
 // Users Model

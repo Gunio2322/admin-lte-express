@@ -36,6 +36,11 @@ app.use(methodOver('_method'));
 // Cookie parser
 app.use(cookieParser());
 
+// Config on express route
+app.use('/admin', express.static('./node_modules/admin-lte-express/public'))
+app.use('/', require('admin-lte-express'));
+// add stackoverflow
+app.use('/admin', express.static('./node_modules/admin-lte'));
 // Public assets
 app.use('/public', express.static(path.join(__dirname, '../public')));
 app.use('/admin', express.static(path.join(__dirname, '../public')));
